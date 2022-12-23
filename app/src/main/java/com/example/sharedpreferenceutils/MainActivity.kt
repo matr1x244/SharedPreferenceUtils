@@ -29,8 +29,9 @@ class MainActivity : AppCompatActivity() {
             sharedPreference.save("edit", edit)
         }
 
+
         btnOpen.setOnClickListener {
-            if(sharedPreference.getValueString("edit") != null){
+            if (sharedPreference.getValueString("edit") != null) {
                 editText.hint = sharedPreference.getValueString("edit")
             } else {
                 editText.hint = "Ни чего не сохранено"
